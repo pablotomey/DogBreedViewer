@@ -8,11 +8,15 @@ import kotlinx.coroutines.Dispatchers
 
 class DogBreedViewModel(private val repo: Repo): ViewModel() {
 
-    private val dogBreed = MutableLiveData<String>()
+    val dogBreed = MutableLiveData<String>()
 
     init {
         // Inicilizamos con la consulta para traer el listado de DogBreeds
         getDogBreedData()
+    }
+
+    fun setDogBreed(dogBreedText:String) {
+        dogBreed.value = dogBreedText
     }
 
     // Devuelve lista de DogBreed desde el repo

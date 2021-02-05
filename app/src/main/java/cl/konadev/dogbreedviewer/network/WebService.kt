@@ -6,9 +6,9 @@ import retrofit2.http.Path
 
 interface WebService {
 
-    @GET("list")
+    @GET("breeds/list")
     suspend fun getDogBreedList(): DogBreedResponse
 
-    @GET("{dogBreed}/image")
+    @GET("breed/{dogBreed}/images")
     suspend fun getDogImage(@Path("dogBreed") dogBreed: String): DogBreedResponse
 }

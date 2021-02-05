@@ -8,7 +8,7 @@ object ConexionClient {
 
     val service by lazy {
         Retrofit.Builder()
-            .baseUrl("https://dog.ceo/api/breeds/")
+            .baseUrl("https://dog.ceo/api/")
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
             .build().create(WebService::class.java)
     }
