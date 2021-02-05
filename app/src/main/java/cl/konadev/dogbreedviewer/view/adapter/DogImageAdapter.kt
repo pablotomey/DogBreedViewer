@@ -30,7 +30,7 @@ class DogImageAdapter(private val context: Context,
 
     inner class MainViewHolder(itemView: View): BaseViewHolder<String>(itemView){
         override fun bind(item: String, position: Int) {
-            Glide.with(context).load(item).centerCrop().into(itemView.dog_img)
+            Glide.with(context).load(item).into(itemView.dog_img)
 
         }
 
