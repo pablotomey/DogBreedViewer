@@ -1,0 +1,8 @@
+site:
+  about:
+    siteName: Kotlin Project
+    siteDescription: This is a short description of this project.
+Editorial:
+  primaryColor: '#DE9149'
+  social:
+    github: 'username/project'
